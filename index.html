@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!--  Header  -->
+  <body>
+    <header class="container-fluid text-center">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know How we can improve our services</p>
+    </header>
+    <!-- Form  -->
+    <form class="container" id="survey-form">
+      <!-- for name  -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter Name"
+          required
+        />
+      </div>
+      <!-- Email Address -->
+      <div class="form-group">
+        <label id="email-label" for="name">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+          required
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <!-- Age -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          placeholder="Enter Age"
+          min="13"
+          max="90"
+          required
+        />
+      </div>
+      <!-- Employment  -->
+      <div class="form-group">
+        <label for="dropdown">Employment</label>
+        <select name="dropdown" id="dropdown" class="form-control">
+          <option value="" disabled selected>Select An Option</option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+        </select>
+      </div>
+      <!-- radios  -->
+      <div class="form-check">
+        <label for="dropdown">How Likely are you to recommend us?</label> <br />
+
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios1"
+          value="option1"
+          checked
+        />
+        <label class="form-check-label" for="exampleRadios1">
+          Very Likely
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios2"
+          value="option2"
+        />
+        <label class="form-check-label" for="exampleRadios2">
+          Maybe
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios3"
+          value="option3"
+        />
+        <label class="form-check-label" for="exampleRadios3">
+          Never in a million YEARS
+        </label>
+      </div>
+
+      <!-- CheckBox  -->
+      <br />
+      <label for="checkbox">Check All That Apply</label>
+
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="exampleCheck1"
+          value="checkboxes"
+        />
+        <label class="form-check-label" for="exampleCheck1">All</label>
+      </div>
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="exampleCheck2"
+          value="checkboxes"
+        />
+        <label class="form-check-label" for="exampleCheck2">None</label>
+      </div>
+      <!-- text area  -->
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="button text-center">
+        <button type="submit" class="btn btn-primary" id="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
